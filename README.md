@@ -20,7 +20,7 @@ Fork and clone this repository. Make edits, following the directions, commit the
 AND
 
 * `http://localhost:5000/` -> should render **Hello world!** -- PROVIDED WITH ORIGINAL FILE
-* `http://localhost:5000/user/name` -> should render **Hello {name}** -- PROVIDED WITH ORIGINAL FILE
+* `http://localhost:5000/user/<name>` -> should render **Hello {name}** -- PROVIDED WITH ORIGINAL FILE
 
 
 ## Instructions
