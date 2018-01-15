@@ -39,7 +39,7 @@ Each of the templates should be rendered with actual data when those routes are 
 
 Check out the action on forms, and the end-locations of links, in order to ensure that you send the correct data to templates and that the templates get the correct data!
 
-You may edit the templates *only slightly*: you may not edit their structure, but depending on your choices in the process of making this work, you may need to edit small details. However, you should *not* need to do so in any significant way.
+You may edit the provided templates *only slightly*: you may not edit their structure to earn full credit, but depending on your choices in the process of making this work, you can edit small details. However, you should *not* need to do so in any significant way.
 
 ### Part 2 (300 points)
 
