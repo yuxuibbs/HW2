@@ -31,7 +31,18 @@ They involve: using templates, writing templates with Jinja2 templating, debuggi
 
 ### Part 1 (500 points)
 
-Edit the `SI364_HW3.py` file inside the `HW3Part1` directory to add routes to the basic Flask application that will match the templates in the `templates` subdirectory inside the `HW3Part1` folder. (**Do not** change the name of this file.)
+Edit the `SI364_HW3.py` file inside the `HW3Part1` directory to add routes to the basic Flask application that will match the **provided** templates in the `templates` subdirectory inside the `HW3Part1` folder. (**Do not** change the name of this file.)
+
+The templates that are provided for you are:
+
+* `artist_info.html`
+* `artist_links.html`
+* `artistform.html`
+* `specific_artist.html`
+
+Check them out carefully (variables, actions, methods, etc) to determine how to write the view functions you need.
+
+You will need to use the iTunes REST API for this again. Your parameters are laid out by the templates, and what you've already seen from this API. **Think:** What data do you know you need, based on each template? Given the context here, what does each view function need to *do*?
 
 When you are done with this part of the HW, you should have the following four routes which render each of the corresponding templates with reasonable data:
 
@@ -44,7 +55,7 @@ Each of the templates should be rendered with actual data when those routes are 
 
 Check out the action on forms, and the end-locations of links, in order to ensure that you send the correct data to templates and that the templates get the correct data!
 
-You may edit the provided templates *only slightly*: you may not edit their structure to earn full credit, but depending on your choices in the process of making this work, you can edit small details. However, you should *not* need to do so in any significant way.
+You may edit the provided templates *only slightly*: **you may not edit their structure nor any variable names in them** to earn full credit. You should *not* need to do so in any significant way.
 
 ### Part 2 (300 points)
 
