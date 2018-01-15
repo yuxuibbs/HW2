@@ -41,14 +41,14 @@ Check out the action on forms, and the end-locations of links, in order to ensur
 
 You may edit the templates (only slightly): you may not edit their structure, but depending on your choices in the process of making this work, you may need to edit small details. However, you should *not* need to do so in any significant way.
 
-### Part 2
+### Part 2 (300 points)
 
 **Add a form to the application in `SI364W18_HW2.py`, using `WTForms` syntax. The class name should be `AlbumEntryForm`.**
 
 The `AlbumEntryForm` should have the following fields:
 
 * Text entry for an album name, whose label should be `Enter the name of an album:`, which should be **required**
-* Radio buttons with options: 1,2,3 -- representing how much the user likes the album, whose label should be: `How much do you like this album? (1 low, 3 high)`, which should be **required**
+* Radio buttons with options: 1,2,3 -- representing how much the user likes the album, whose label should be: `How much do you like this album? (1 low, 3 high)`, which should be **required**f
 * A submit button
 
 **Then, add 2 more routes to the application:**
@@ -57,7 +57,7 @@ The `AlbumEntryForm` should have the following fields:
 
 * `/album_result`, which should render the results of what was submitted to the `AlbumEntryForm`, [like this](www.fakelink.com). It should send data to a template called `album_data.html` (see Part 3).
 
-### Part 3
+### Part 3 (200 points)
 
 Add templates to the application, in the provided `templates/` directory, for those two routes.
 
