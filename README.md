@@ -22,7 +22,7 @@ Fork and clone this repository. Make edits, following the directions, commit the
 
 This HW assignment comes in three parts, which build on one another.
 
-They involve: using templates, debugging templates and view function decisions in a Flask application, using WTForms, and writing form validator functions.
+They involve: using templates, writing templates with Jinja2 templating, debugging templates and view function decisions in a Flask application, and using WTForms.
 
 ### Part 1 (500 points)
 
