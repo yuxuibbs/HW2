@@ -69,9 +69,9 @@ The `AlbumEntryForm` should have the following fields:
 
 **Then, add 2 more routes to the application:**
 
-* `/album_entry`, which should render the WTForm you just created (note that there is a raw HTML form in the `artistform.html` template, but THIS should rely on your WTForms form). It should send data to a template called `album_entry.html` (see Part 3).
+* `/album_entry`, which should render the WTForm you just created (note that there is a raw HTML form in one of the provided templates, but THIS should rely on your WTForms form). It should send data to a template called `album_entry.html` (see Part 3). The form should look pretty much [like this](https://www.dropbox.com/s/6mvt6d4b929vu0n/Screenshot%202018-01-15%2016.10.09.png?dl=0) **when you are done with Part 3.**
 
-* `/album_result`, which should render the results of what was submitted to the `AlbumEntryForm`, [like this](www.fakelink.com). It should send data to a template called `album_data.html` (see Part 3).
+* `/album_result`, which should render the results of what was submitted to the `AlbumEntryForm`, [like this](https://www.dropbox.com/s/vqi7ybmkdh7ca1q/Screenshot%202018-01-15%2016.07.38.png?dl=0) **when you are done with Part 3.** It should send data to a template called `album_data.html` (see Part 3).
 
 ### Part 3 (200 points)
 
