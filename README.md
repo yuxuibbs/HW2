@@ -17,10 +17,10 @@ Fork and clone this repository. Make edits, following the directions, commit the
 * `http://localhost:5000/album_entry` -> `album_entry.html`
 * `http://localhost:5000/album_result` -> `album_data.html`
 
-AND 
+AND
 
 * `http://localhost:5000/` -> should render **Hello world!** -- PROVIDED WITH ORIGINAL FILE
-* `http://localhost:5000/user/name` -> should render **Hello <name>** -- PROVIDED WITH ORIGINAL FILE
+* `http://localhost:5000/user/name` -> should render **Hello {name}** -- PROVIDED WITH ORIGINAL FILE
 
 
 ## Instructions
