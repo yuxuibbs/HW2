@@ -47,8 +47,8 @@ You may edit the templates (only slightly): you may not edit their structure, bu
 
 The `AlbumEntryForm` should have the following fields:
 
-* Text entry for an album name, whose label should be `Enter the name of an album:`
-* Radio buttons with options: 1,2,3 -- representing how much the user likes the album, whose label should be: `How much do you like this album? (1 low, 3 high)`
+* Text entry for an album name, whose label should be `Enter the name of an album:`, which should be **required**
+* Radio buttons with options: 1,2,3 -- representing how much the user likes the album, whose label should be: `How much do you like this album? (1 low, 3 high)`, which should be **required**
 * A submit button
 
 **Then, add 2 more routes to the application:**
