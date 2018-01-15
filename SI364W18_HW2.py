@@ -8,7 +8,7 @@
 
 ## As part of the homework, you may also need to add templates (new .html files) to the templates directory.
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 app = Flask(__name__)
 
 @app.route('/')
