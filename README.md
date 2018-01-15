@@ -6,9 +6,9 @@
 
 Fork and clone this repository. Make edits, following the directions, commit them all, and then push your changes to your fork. Submit the link to your fork of the repository on GitHub to the Canvas assignment.
 
-**Do not** change any file names. Make **sure** all your file names and label text are exactly as directed for grading.
+**Do not** change any file names. Make **sure** all your file names and label text are exactly as directed for grading. And **do not** make edits to this `README.md` file, even in your own fork (this is for a Git reason, which we will show you during a class session).
 
-If you have completed 100% of the homework, your application should have the following routes, each of which should render the template listed here:
+**If you have completed 100% of the homework,** your application should have the following routes, each of which should render the template listed here:
 
 * `http://localhost:5000/artistform` -> `artistform.html`
 * `http://localhost:5000/artistinfo` -> `artist_info.html`
@@ -59,7 +59,17 @@ The `AlbumEntryForm` should have the following fields:
 
 ### Part 3
 
-Add templates to the application, in the provided `templates/` directory, for those two routes. You should be creating 2 template files:
+Add templates to the application, in the provided `templates/` directory, for those two routes.
+
+You should be creating 2 template files:
 
 * `album_entry.html`, which should use the data sent from the `/album_entry` route's view function
 * `album_data.html`, which should use the data sent from the `/album_result` route's view function
+
+## Finally
+
+Check to make sure that each of the routes listed at the beginning of this README works correctly, and that each of the templates exist, all with the correct filenames.
+
+If so, you're all set!
+
+If you complete most but not all of this, that's OK, too. This isn't easy, but trying is important for learning!
