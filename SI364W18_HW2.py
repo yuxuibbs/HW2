@@ -13,12 +13,10 @@
 #############################
 
 from flask import Flask, request, render_template
-<<<<<<< HEAD
 import FlaskForm
 from wtforms import StringField, SubmitField, RadioField, ValidationError
 from wtforms.validators import Required
 
-=======
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, RadioField, ValidationError
 from wtforms.validators import Required
@@ -27,7 +25,6 @@ from wtforms.validators import Required
 ##### APP SETUP #####
 #####################
 
->>>>>>> a6eb0a1... Add structure and import stmts necessary
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hardtoguessstring'
 
