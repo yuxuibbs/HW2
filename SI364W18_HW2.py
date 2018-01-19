@@ -12,11 +12,6 @@
 ##### IMPORT STATEMENTS #####
 #############################
 
-from flask import Flask, request, render_template
-import FlaskForm
-from wtforms import StringField, SubmitField, RadioField, ValidationError
-from wtforms.validators import Required
-
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, RadioField, ValidationError
 from wtforms.validators import Required
