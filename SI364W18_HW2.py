@@ -15,6 +15,8 @@ from flask import Flask, request, render_template, url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, RadioField, ValidationError
 from wtforms.validators import Required
+import json
+import requests
 
 #####################
 ##### APP SETUP #####
@@ -26,8 +28,10 @@ app.config['SECRET_KEY'] = 'hardtoguessstring'
 ####################
 ###### FORMS #######
 ####################
-
-
+class AlbumEntryForm(FlaskForm):
+    albumName = StringField('Enter the name of an album:', validators = [Required()])
+    likeNum = RadioField('How much do you like this album? (1 low, 3 high)', choices = [('1', '1'), ('2', '2'), ('3', '3')], validators = [Required()])
+    submit = SubmitField('Submit')
 
 
 ####################
@@ -38,10 +42,45 @@ app.config['SECRET_KEY'] = 'hardtoguessstring'
 def hello_world():
     return 'Hello World!'
 
-
 @app.route('/user/<name>')
 def hello_user(name):
     return '<h1>Hello {0}<h1>'.format(name)
+
+# part 1
+@app.route('/artistform')
+def artist_form():
+    return render_template('artistform.html')
+
+@app.route('/artistinfo')
+def artist_info():
+    jsonObject = json.loads(requests.get("https://itunes.apple.com/search", params = {"term": request.args['artist'] }).text)
+    result = jsonObject["results"]
+    return render_template('artist_info.html', objects = result)
+
+
+@app.route('/artistlinks')
+def artist_links():
+    return render_template('artist_links.html')
+
+
+@app.route('/specific/song/<artist_name>')
+def specific_artist(artist_name):
+    jsonObject = json.loads(requests.get("https://itunes.apple.com/search", params = {"term": artist_name }).text)
+    result = jsonObject["results"]
+    return render_template("specific_artist.html", results = result)
+
+
+# part 2
+@app.route('/album_entry')
+def album_entry():
+    albumForm = AlbumEntryForm()
+    return render_template('album_entry.html', form = albumForm)
+
+@app.route('/album_result')
+def album_result():
+    return render_template('album_data.html')
+
+
 
 
 if __name__ == '__main__':
