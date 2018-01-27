@@ -11,7 +11,7 @@
 #############################
 ##### IMPORT STATEMENTS #####
 #############################
-from flask import Flask, request, render_template, url_for
+from flask import Flask, request, render_template, url_for, flash, redirect
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, RadioField, ValidationError
 from wtforms.validators import Required
@@ -77,12 +77,15 @@ def album_entry():
     albumForm = AlbumEntryForm()
     return render_template('album_entry.html', form = albumForm)
 
-@app.route('/album_result')
+@app.route('/album_result', methods = ['GET', 'POST'])
 def album_result():
-    album = request.args['albumName']
-    rating = request.args['ratingNum']
-    return render_template('album_data.html', albumTitle = album, rating = rating)
-
+    form = AlbumEntryForm()
+    if request.method == 'POST' and form.validate_on_submit():
+        album = form.albumName.data
+        rating = form.ratingNum.data
+        return render_template('album_data.html', albumTitle = album, rating = rating)
+    flash('All fields are required!')
+    return redirect(url_for('album_entry'))
 
 
 
