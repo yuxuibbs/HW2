@@ -1,7 +1,7 @@
-<form action="{{url_for('album_result')}}" method="POST">
+<form action="http://localhost:5000/album_result" method="GET">
     {{ form.hidden_tag() }}
     {{ form.albumName.label }} {{ form.albumName }}<br>
-    {{ form.likeNum.label }} {{ form.likeNum }}<br>
+    {{ form.ratingNum.label }} {{ form.ratingNum }}<br>
     {{ form.submit() }}<br>
 </form>
 
